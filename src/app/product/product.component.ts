@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ProductComponent implements OnInit {
 
   products : any;
+  productsBlank : any;
 
   constructor() {
+
     this.products = [
       {
         "id": 4387,
@@ -38,6 +40,11 @@ export class ProductComponent implements OnInit {
         "price": 30000
       }
     ]
+
+    this.productsBlank = [
+
+    ]
+
   }
 
   ngOnInit() {

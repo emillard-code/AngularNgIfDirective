@@ -32,5 +32,26 @@
   </table>
 </div>
 
+<div class="container">      
+  <table class="table table-striped">
+    <thead>
+      <tr *ngIf = "productsBlank.length > 0">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let product of productsBlank">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.brand}}</td>
+        <td>{{product.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 </body>
 </html>
