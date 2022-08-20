@@ -24,7 +24,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngIf = "products.length > 0">
         <td>{{product.id}}</td>
         <td>{{product.name}}</td>
         <td>{{product.brand}}</td>
